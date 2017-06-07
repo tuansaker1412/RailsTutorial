@@ -13,6 +13,11 @@ en:
       home: "Home"
       help: "Help"
       login: "Log in"
+      user: "Users"
+      acc: "Account"
+      profile: "Profile"
+      set: "Settings"
+      logout: "Log out"
   static_pages:
     about:
       ab: "About"
@@ -60,3 +65,14 @@ en:
     error_messages:
       theform: "The form contains "
       error: "error"
+  sessions:
+    new:
+      login: "Log in"
+      email: "Email"
+      pass: "Password"
+      signup: "Sign up now!"
+      usernew: "New user?"
+    create:
+      error: "Invalid email/password combination"
+    destroy:
+      logout: "Done!!!"
