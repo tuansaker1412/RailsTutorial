@@ -41,4 +41,22 @@ en:
       this: "This is the home page for the"
       ror: "Ruby on Rails Tutorial"
       sp: "sample application."
-      su: "Sign up now!"
+      signup: "Sign up now!"
+  users:
+    new:
+      signup: "Sign up"
+      user: "Username"
+      email: "Email"
+      pass: "Password"
+      confirm: "Confirmation"
+      create: "Create my account"
+    show:
+      user: "Username: "
+      email: "Email: "
+    create:
+      welcome: "Welcome to the Sample App!"
+      fail: "Fail!!!"
+  shared:
+    error_messages:
+      theform: "The form contains "
+      error: "error"
