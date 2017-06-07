@@ -72,6 +72,7 @@ en:
       pass: "Password"
       signup: "Sign up now!"
       usernew: "New user?"
+      remember: "Remember me on this computer"
     create:
       error: "Invalid email/password combination"
     destroy:
