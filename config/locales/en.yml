@@ -16,7 +16,7 @@ en:
       user: "Users"
       acc: "Account"
       profile: "Profile"
-      set: "Settings"
+      settings: "Settings"
       logout: "Log out"
   static_pages:
     about:
@@ -48,12 +48,13 @@ en:
       sp: "sample application."
       signup: "Sign up now!"
   users:
-    new:
-      signup: "Sign up"
+    form:
       user: "Username"
       email: "Email"
       pass: "Password"
       confirm: "Confirmation"
+    new:
+      signup: "Sign up"
       create: "Create my account"
     show:
       user: "Username: "
@@ -61,6 +62,24 @@ en:
     create:
       welcome: "Welcome to the Sample App!"
       fail: "Fail!!!"
+    edit:
+      edit: "Edit user"
+      save: "Save changes"
+      update: "Update your profile"
+      please: "Please log in."
+      change: "Change"
+    update:
+      updated: "Profile updated"
+      error: "Error!!!"
+    index:
+      all: "All users"
+      please: "Please log in."
+    destroy:
+      deleted: "User deleted"
+      error: "Error!!!"
+    user:
+      delete: "Delete"
+      sure: "You sure?"
   shared:
     error_messages:
       theform: "The form contains "
@@ -76,4 +95,4 @@ en:
     create:
       error: "Invalid email/password combination"
     destroy:
-      logout: "Done!!!"
+      logout: "Bye bye!!!"
