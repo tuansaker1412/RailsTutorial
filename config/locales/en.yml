@@ -60,7 +60,7 @@ en:
       user: "Username: "
       email: "Email: "
     create:
-      welcome: "Welcome to the Sample App!"
+      check_mail: "Please check your email to activate your account."
       fail: "Fail!!!"
     edit:
       edit: "Edit user"
@@ -94,5 +94,17 @@ en:
       remember: "Remember me on this computer"
     create:
       error: "Invalid email/password combination"
+      not_active: "Account not activated. Check your email for the activation link."
     destroy:
       logout: "Bye bye!!!"
+  user_mailer:
+    account_activation:
+      samapp: "Sample App"
+      hi: "Hi"
+      welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
+      active: "Account activation"
+  account_activations:
+    edit:
+      acc_active: "Account activated!"
+      error_active: "Invalid activation link"
+
