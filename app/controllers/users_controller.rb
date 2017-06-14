@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, except: [:new, :create, :show]
+  before_action :logged_in_user, except: [:new, :create]
   before_action :load_user, except: [:new, :create, :index]
   before_action :correct_user, only: [:edit, :update]
   before_action :verify_admin!, only: :destroy
@@ -16,8 +16,9 @@ class UsersController < ApplicationController
     @user = User.new user_params
 
     if @user.save
-      flash[:success] = t ".welcome"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t ".check_mail"
+      redirect_to root_url
     else
       flash.now[:danger] = t ".fail"
       render :new
