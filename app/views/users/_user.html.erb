@@ -1,8 +1,10 @@
-<li>
-  <%= gravatar_for user, size: Settings.user.index_gravatar_size %>
-  <%= link_to user.name, user, class: "btn btn-primary" %>
-  <% if current_user.admin? && !(current_user.current_user? user) %>
-    | <%= link_to t(".delete"), user, method: :delete,
+<tr>
+  <td><%= gravatar_for user, size: Settings.user.index_gravatar_size %></td>
+  <td><%= link_to user.name, user, class: "btn btn-primary" %></td>
+  <td>
+    <% if current_user.admin? && !(current_user.current_user? user) %>
+      <%= link_to t(".delete"), user, method: :delete,
       data: {confirm: t(".sure")}, class: "btn btn-danger btn-outline" %>
-  <% end %>
-</li>
+    <% end %>
+  </td>
+</tr>

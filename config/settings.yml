@@ -3,6 +3,7 @@ user:
   max_email_size: 255
   min_pass_size: 6
   index_gravatar_size: 50
+  password_reset_time: 2
 users_helper:
   gravatar_size: 80
 page:
