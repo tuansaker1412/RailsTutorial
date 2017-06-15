@@ -2,6 +2,19 @@
 <h1><%= t ".all" %></h1>
 <%= will_paginate %>
 <ul class="users">
-  <%= render @users %>
+  <div class="table-responsive">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th><%= t ".ava" %></th>
+          <th><%= t ".user" %></th>
+          <th><%= t ".delete" %></th>
+        </tr>
+      </thead>
+      <tbody>
+        <%= render @users %>
+      </tbody>
+    </table>
+  </div>
 </ul>
 <%= will_paginate %>
