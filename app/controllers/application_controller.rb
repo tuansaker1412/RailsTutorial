@@ -6,4 +6,14 @@ class ApplicationController < ActionController::Base
     return if object
     render file: "public/404.html", layout: false
   end
+
+  private
+
+  def logged_in_user
+    unless logged_in?
+      store_location
+      flash[:danger] = t ".please"
+      redirect_to login_url
+    end
+  end
 end
