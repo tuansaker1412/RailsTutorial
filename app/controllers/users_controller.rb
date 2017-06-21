@@ -26,6 +26,8 @@ class UsersController < ApplicationController
   end
 
   def show
+    @microposts = @user.microposts.sort_feed.page(params[:page]).
+      per_page Settings.feed.feed_number
   end
 
   def edit
@@ -77,5 +79,9 @@ class UsersController < ApplicationController
 
   def correct_user
     redirect_to root_url unless current_user.current_user? @user
+  end
+
+  def verify_admin
+    redirect_to root_url unless current_user.admin?
   end
 end

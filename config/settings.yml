@@ -8,3 +8,15 @@ users_helper:
   gravatar_size: 80
 page:
   limit_user: 10
+micropost:
+  ava_micropost_size: 50
+  picture_size: 5
+  content_max: 140
+picture:
+  picture_size: 400
+feed:
+  feed_number: 10
+seed:
+  user: 50
+  take: 6
+  sentence: 5
