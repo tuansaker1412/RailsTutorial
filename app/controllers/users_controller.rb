@@ -26,8 +26,8 @@ class UsersController < ApplicationController
   end
 
   def show
-    @microposts = @user.microposts.sort_feed.page(params[:page]).
-      per_page Settings.feed.feed_number
+    @microposts = @user.microposts.sort_feed.page(params[:page])
+      .per_page Settings.feed.feed_number
   end
 
   def edit
@@ -55,6 +55,18 @@ class UsersController < ApplicationController
 
   def verify_admin!
     redirect_to root_url unless current_user.admin?
+  end
+
+  def following
+    @title = t ".following"
+    @users = @user.following.paginate page: params[:page]
+    render :show_follow
+  end
+
+  def followers
+    @title = t ".followers"
+    @users = @user.followers.paginate page: params[:page]
+    render :show_follow
   end
 
   private

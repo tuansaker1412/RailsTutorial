@@ -20,3 +20,5 @@ seed:
   user: 50
   take: 6
   sentence: 5
+follow:
+  gravatar_size: 30
