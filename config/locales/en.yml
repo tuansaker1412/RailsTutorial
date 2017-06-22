@@ -86,6 +86,16 @@ en:
     user:
       delete: "Delete"
       sure: "You sure?"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    show_follow:
+      microposts: "Microposts:"
+      ava: "Gravatar"
+      user: "User"
+      delete: "Delete"
+      view_my_profile: "View my profile"
   shared:
     error_messages:
       theform: "The form contains "
@@ -96,6 +106,9 @@ en:
     user_info:
       view_profile: "view my profile"
       micropost: "micropost"
+    stats:
+      following: "following"
+      followers: "followers"
   sessions:
     new:
       login: "Log in"
